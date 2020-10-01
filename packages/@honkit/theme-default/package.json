@@ -44,7 +44,7 @@
     "clean": "rimraf _assets && mkdirp _assets/ebook/ _assets/website/ _assets/website/fonts _assets/website/images",
     "cp": "npm-run-all -p cp:*",
     "cp:favicon": "cpy logo/favicon.ico _assets/website/images/",
-    "cp:font-awesome": "cpy font-awesome/fonts/ _assets/website/fonts/fontawesome/",
+    "cp:font-awesome": "cpy ../../../node_modules/@fortawesome/fontawesome-free/webfonts/ _assets/website/fonts/fontawesome",
     "cp:logo": "cpy logo/apple-touch-icon.png _assets/website/images/ --rename=apple-touch-icon-precomposed-152.png",
     "prepublish": "npm run build"
   },
@@ -52,7 +52,7 @@
     "browserify": "13.1.0",
     "cpy-cli": "^3.1.1",
     "eslint": "7.2.0",
-    "font-awesome": "4.6.3",
+    "@fortawesome/fontawesome-free": "5.14.0",
     "gitbook-markdown-css": "1.0.1",
     "jquery": "3.5.1",
     "less": "2.7.1",
